@@ -24,7 +24,7 @@ params:
   disableThemeToggle: false
   disableLangToggle: false
   mainSections:
-    - "portfolio"
+    - "post"
   ShowReadingTime: false
   ShowShareButtons: false
   ShowCodeCopyButtons: false
@@ -64,10 +64,12 @@ languages:
         title: "Muhammad Danish Rabbani"
         subtitle: "Full-Stack Developer, IT Software Engineer, dan founder SatuInovasi.com. Fokus pada desktop, web, mobile, DevOps, cloud, dan automasi bisnis."
         buttons:
-          - name: "Portofolio"
-            url: "/portfolio/"
           - name: "Tentang"
             url: "/about/"
+          - name: "Artikel"
+            url: "/post/"
+          - name: "Portofolio"
+            url: "/portfolio/"
           - name: "Kontak"
             url: "/contact/"
     menu:
@@ -75,12 +77,15 @@ languages:
         - name: "Tentang"
           pageRef: "/about"
           weight: 10
+        - name: "Artikel"
+          pageRef: "/post"
+          weight: 20
         - name: "Portofolio"
           pageRef: "/portfolio"
-          weight: 20
+          weight: 30
         - name: "Kontak"
           pageRef: "/contact"
-          weight: 30
+          weight: 40
   en:
     languageName: "English"
     languageCode: "en-US"
@@ -95,10 +100,12 @@ languages:
         title: "Muhammad Danish Rabbani"
         subtitle: "Full-Stack Developer, IT Software Engineer, and founder of SatuInovasi.com. I focus on desktop, web, mobile, DevOps, cloud, and business automation."
         buttons:
-          - name: "Portfolio"
-            url: "/en/portfolio/"
           - name: "About"
             url: "/en/about/"
+          - name: "Blog"
+            url: "/en/post/"
+          - name: "Portfolio"
+            url: "/en/portfolio/"
           - name: "Contact"
             url: "/en/contact/"
     menu:
@@ -106,9 +113,12 @@ languages:
         - name: "About"
           pageRef: "/about"
           weight: 10
+        - name: "Blog"
+          pageRef: "/post"
+          weight: 20
         - name: "Portfolio"
           pageRef: "/portfolio"
-          weight: 20
+          weight: 30
         - name: "Contact"
           pageRef: "/contact"
-          weight: 30
+          weight: 40
