@@ -1,0 +1,114 @@
+baseURL: "https://danishrabbani.my.id/"
+title: "Muhammad Danish Rabbani"
+defaultContentLanguage: "id"
+defaultContentLanguageInSubdir: false
+pagination:
+  pagerSize: 8
+enableRobotsTXT: true
+
+params:
+  author: "Muhammad Danish Rabbani"
+  description: "Full-Stack Developer, IT Software Engineer, dan founder SatuInovasi.com."
+  keywords:
+    - "Muhammad Danish Rabbani"
+    - "Full-Stack Developer"
+    - "IT Software Engineer"
+    - "Web Development"
+    - "Mobile Development"
+    - "DevOps"
+    - "Cloud"
+    - "Automation"
+  env: "production"
+  defaultTheme: "auto"
+  displayFullLangName: true
+  disableThemeToggle: false
+  disableLangToggle: false
+  mainSections:
+    - "portfolio"
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowCodeCopyButtons: false
+  ShowPostNavLinks: true
+  ShowRssButtonInSectionTermList: true
+  hideFooter: false
+  assets:
+    favicon: "images/profile.svg"
+    favicon16x16: "images/profile.svg"
+    favicon32x32: "images/profile.svg"
+    apple_touch_icon: "images/profile.svg"
+    safari_pinned_tab: "images/profile.svg"
+    theme_color: "#0f172a"
+    msapplication_TileColor: "#0f172a"
+  socialIcons:
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/muhammad-danish-rabbani/"
+    - name: "github"
+      url: "https://github.com/MDanishRabbani"
+    - name: "instagram"
+      url: "https://www.instagram.com/mhd.danish.r/"
+    - name: "youtube"
+      url: "https://www.youtube.com/channel/UCETZi0yu6nPYageqoBWnt4g"
+
+languages:
+  id:
+    languageName: "Bahasa Indonesia"
+    languageCode: "id-ID"
+    weight: 1
+    params:
+      profileMode:
+        enabled: true
+        imageUrl: "images/profile.svg"
+        imageTitle: "Muhammad Danish Rabbani"
+        imageWidth: 220
+        imageHeight: 220
+        title: "Muhammad Danish Rabbani"
+        subtitle: "Full-Stack Developer, IT Software Engineer, dan founder SatuInovasi.com. Fokus pada desktop, web, mobile, DevOps, cloud, dan automasi bisnis."
+        buttons:
+          - name: "Portofolio"
+            url: "/portfolio/"
+          - name: "Tentang"
+            url: "/about/"
+          - name: "Kontak"
+            url: "/contact/"
+    menu:
+      main:
+        - name: "Tentang"
+          pageRef: "/about"
+          weight: 10
+        - name: "Portofolio"
+          pageRef: "/portfolio"
+          weight: 20
+        - name: "Kontak"
+          pageRef: "/contact"
+          weight: 30
+  en:
+    languageName: "English"
+    languageCode: "en-US"
+    weight: 2
+    params:
+      profileMode:
+        enabled: true
+        imageUrl: "images/profile.svg"
+        imageTitle: "Muhammad Danish Rabbani"
+        imageWidth: 220
+        imageHeight: 220
+        title: "Muhammad Danish Rabbani"
+        subtitle: "Full-Stack Developer, IT Software Engineer, and founder of SatuInovasi.com. I focus on desktop, web, mobile, DevOps, cloud, and business automation."
+        buttons:
+          - name: "Portfolio"
+            url: "/en/portfolio/"
+          - name: "About"
+            url: "/en/about/"
+          - name: "Contact"
+            url: "/en/contact/"
+    menu:
+      main:
+        - name: "About"
+          pageRef: "/about"
+          weight: 10
+        - name: "Portfolio"
+          pageRef: "/portfolio"
+          weight: 20
+        - name: "Contact"
+          pageRef: "/contact"
+          weight: 30
