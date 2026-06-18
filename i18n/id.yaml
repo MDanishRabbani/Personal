@@ -31,3 +31,12 @@
 
 - id: code_copied
   translation: "disalin!"
+
+- id: latest_posts
+  translation: "Tulisan Terbaru"
+
+- id: latest_projects
+  translation: "Proyek Terbaru"
+
+- id: view_more_projects
+  translation: "Lihat Proyek Lainnya"

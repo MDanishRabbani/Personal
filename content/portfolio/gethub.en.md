@@ -1,8 +1,12 @@
 ---
 title: "Gethub"
 description: "Freelancer and project-owner platform built for the Bangkit capstone."
+date: 2026-06-16T09:00:00+07:00
 weight: 1
 hideMeta: true
+cover:
+  image: "images/projects/gethub.svg"
+  alt: "Gethub cover"
 tags:
   - "bangkit"
   - "full-stack"

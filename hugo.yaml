@@ -1,5 +1,5 @@
-baseURL: "https://danishrabbani.my.id/"
-title: "Muhammad Danish Rabbani"
+baseURL: "http://localhost:1313/"
+title: "Home"
 defaultContentLanguage: "id"
 defaultContentLanguageInSubdir: false
 pagination:

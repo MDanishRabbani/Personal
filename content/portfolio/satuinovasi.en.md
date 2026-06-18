@@ -1,8 +1,12 @@
 ---
 title: "SatuInovasi.com"
 description: "Web, automation, and digital strategy services for businesses."
+date: 2026-06-14T09:00:00+07:00
 weight: 2
 hideMeta: true
+cover:
+  image: "images/projects/satuinovasi.svg"
+  alt: "SatuInovasi.com cover"
 tags:
   - "services"
   - "automation"

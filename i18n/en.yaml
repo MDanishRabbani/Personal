@@ -31,3 +31,12 @@
 
 - id: code_copied
   translation: "copied!"
+
+- id: latest_posts
+  translation: "Latest Posts"
+
+- id: latest_projects
+  translation: "Latest Projects"
+
+- id: view_more_projects
+  translation: "See More Projects"

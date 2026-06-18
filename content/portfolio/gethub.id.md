@@ -1,8 +1,12 @@
 ---
 title: "Gethub"
 description: "Platform freelancer dan project owner untuk capstone Bangkit."
+date: 2026-06-16T09:00:00+07:00
 weight: 1
 hideMeta: true
+cover:
+  image: "images/projects/gethub.svg"
+  alt: "Cover Gethub"
 tags:
   - "bangkit"
   - "full-stack"

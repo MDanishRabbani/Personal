@@ -1,8 +1,12 @@
 ---
 title: "Middleware Pembayaran Mobile untuk E-Samsat Aceh"
 description: "Proyek akademik tentang integrasi pembayaran mobile."
+date: 2026-06-08T09:00:00+07:00
 weight: 4
 hideMeta: true
+cover:
+  image: "images/projects/esamsat.svg"
+  alt: "Cover E-Samsat Aceh"
 tags:
   - "research"
   - "mobile"
@@ -22,4 +26,3 @@ Proyek akademik ini membahas perancangan dan pengembangan middleware pembayaran 
 ## Kenapa Penting
 
 Ini adalah contoh proyek yang menggabungkan analisis kebutuhan, integrasi sistem, dan implementasi teknis untuk use case publik.
-

@@ -1,0 +1,74 @@
+{{- define "main" }}
+
+<article class="first-entry home-info">
+  <header class="entry-header">
+    <h1>{{ .Title | markdownify }}</h1>
+  </header>
+  <div class="entry-content md-content">
+    {{- .Content -}}
+  </div>
+  <footer class="entry-footer">
+    {{ partial "social_icons.html" (dict "align" "") }}
+  </footer>
+</article>
+
+{{- $posts := sort (where site.RegularPages "Type" "post") "Date" "desc" -}}
+{{- $posts = where $posts "Params.hiddenInHomeList" "!=" "true" -}}
+{{- if gt (len $posts) 0 }}
+<section>
+  <h2>{{ i18n "latest_posts" }}</h2>
+  {{- range first 2 $posts }}
+  <article class="post-entry">
+    {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+    {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <footer class="entry-footer">
+      {{- partial "post_meta.html" . -}}
+    </footer>
+    {{- end }}
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+</section>
+{{- end }}
+
+{{- $projects := sort (where site.RegularPages "Type" "portfolio") "Weight" "asc" -}}
+{{- $projects = where $projects "Params.hiddenInHomeList" "!=" "true" -}}
+{{- if gt (len $projects) 0 }}
+<section>
+  <h2>{{ i18n "latest_projects" }}</h2>
+  {{- range first 3 $projects }}
+  <article class="post-entry">
+    {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+    {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <footer class="entry-footer">
+      {{- partial "post_meta.html" . -}}
+    </footer>
+    {{- end }}
+    <a class="entry-link" aria-label="project link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+  <div class="buttons">
+    <a class="button" href="{{ relLangURL `portfolio/` }}">{{ i18n "view_more_projects" }}</a>
+  </div>
+</section>
+{{- end }}
+
+{{- end }}

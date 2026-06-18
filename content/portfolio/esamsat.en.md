@@ -1,8 +1,12 @@
 ---
 title: "Mobile Payment Middleware for E-Samsat Aceh"
 description: "An academic project about mobile payment integration."
+date: 2026-06-08T09:00:00+07:00
 weight: 4
 hideMeta: true
+cover:
+  image: "images/projects/esamsat.svg"
+  alt: "E-Samsat Aceh cover"
 tags:
   - "research"
   - "mobile"
@@ -22,4 +26,3 @@ This academic project focuses on the design and development of mobile payment mi
 ## Why It Matters
 
 It is an example of work that combines requirements analysis, system integration, and technical implementation for a public use case.
-
