@@ -4,7 +4,7 @@ description: "An academic project about mobile payment integration."
 date: 2026-06-08T09:00:00+07:00
 weight: 4
 cover:
-  image: "images/projects/esamsat.svg"
+  image: "images/projects/seudati.png"
   alt: "E-Samsat Aceh cover"
 tags:
   - "research"

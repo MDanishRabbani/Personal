@@ -4,7 +4,7 @@ description: "Laravel web project with a sprint 2 demo."
 date: 2026-06-11T09:00:00+07:00
 weight: 3
 cover:
-  image: "images/projects/kupitilizer.svg"
+  image: "images/projects/kupitilizer.png"
   alt: "KupiTilizer cover"
 tags:
   - "laravel"

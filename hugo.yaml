@@ -1,5 +1,5 @@
 baseURL: "https://danishrabbani.my.id/"
-title: "Muhammad Danish Rabbani"
+title: "Danish Web"
 defaultContentLanguage: "id"
 defaultContentLanguageInSubdir: false
 pagination:
@@ -68,10 +68,10 @@ languages:
         buttons:
           - name: "Tentang"
             url: "/about/"
-          - name: "Artikel"
+          - name: "Post"
             url: "/post/"
-          - name: "Portofolio"
-            url: "/portfolio/"
+          - name: "Projects"
+            url: "/projects/"
           - name: "Arsip"
             url: "/archives/"
           - name: "Tag"
@@ -83,11 +83,11 @@ languages:
         - name: "Tentang"
           pageRef: "/about"
           weight: 10
-        - name: "Artikel"
+        - name: "Post"
           pageRef: "/post"
           weight: 20
-        - name: "Portofolio"
-          pageRef: "/portfolio"
+        - name: "Projects"
+          pageRef: "/projects"
           weight: 30
         - name: "Arsip"
           pageRef: "/archives"
@@ -116,8 +116,8 @@ languages:
           url: "/en/about/"
         - name: "Posts"
           url: "/en/post/"
-        - name: "Portfolio"
-          url: "/en/portfolio/"
+        - name: "Projects"
+          url: "/en/projects/"
         - name: "Archives"
           url: "/en/archives/"
         - name: "Tags"
@@ -132,8 +132,8 @@ languages:
         - name: "Posts"
           pageRef: "/post"
           weight: 20
-        - name: "Portfolio"
-          pageRef: "/portfolio"
+        - name: "Projects"
+          pageRef: "/projects"
           weight: 30
         - name: "Archives"
           pageRef: "/archives"

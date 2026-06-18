@@ -4,7 +4,7 @@ description: "Freelancer and project-owner platform built for the Bangkit capsto
 date: 2026-06-16T09:00:00+07:00
 weight: 1
 cover:
-  image: "images/projects/gethub.svg"
+  image: "images/projects/gethub.png"
   alt: "Gethub cover"
 tags:
   - "bangkit"
@@ -24,7 +24,7 @@ Gethub is a Bangkit Academy Mobile Development Cohort capstone project led by Go
 - AI-powered sentiment analysis for reviews
 - Escrow payment flow
 - User-to-user chat
-- Digital portfolio
+- Digital projects
 - Business card scanning
 
 ## Why It Matters

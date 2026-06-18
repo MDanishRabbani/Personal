@@ -16,7 +16,7 @@
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
 {{- $paginator := .Paginate $pages }}
 
-{{- $projects := where site.RegularPages "Type" "portfolio" }}
+{{- $projects := where site.RegularPages "Type" "projects" }}
 {{- $projects = where $projects "Params.hiddenInHomeList" "!=" "true" }}
 {{- $projects = sort $projects "Weight" "asc" }}
 
@@ -86,7 +86,7 @@
     </div>
   </div>
   <div class="projects-see-more">
-    <a href="{{ relLangURL `portfolio/` }}" class="see-more-btn">{{ i18n "view_more_projects" }}</a>
+    <a href="{{ relLangURL `projects/` }}" class="see-more-btn">{{ i18n "view_more_projects" }}</a>
   </div>
 </section>
 {{- end }}

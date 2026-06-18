@@ -1,6 +1,6 @@
 ---
-title: "Artikel"
-description: "Catatan teknis, refleksi kerja, dan pembelajaran dari proyek yang saya bangun."
+title: "Post"
+description: "Catatan teknis, refleksi kerja, pembelajaran dari yang saya bangun dan sarana saya berbagi"
 hideMeta: true
 ---
 

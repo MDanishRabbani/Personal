@@ -4,7 +4,7 @@ description: "Proyek web Laravel dengan demo sprint 2."
 date: 2026-06-11T09:00:00+07:00
 weight: 3
 cover:
-  image: "images/projects/kupitilizer.svg"
+  image: "images/projects/kupitilizer.png"
   alt: "Cover KupiTilizer"
 tags:
   - "laravel"
@@ -22,6 +22,6 @@ KupiTilizer adalah proyek kelompok web berbasis Laravel yang saya tampilkan dala
 - Menunjukkan alur kerja web app berbasis Laravel
 - Dipresentasikan lewat demo sprint
 
-## Kenapa Masuk Portofolio
+## Kenapa Masuk Projects
 
 Proyek ini menunjukkan kemampuan mengeksekusi aplikasi web yang lebih dekat ke kebutuhan produksi, bukan sekadar latihan kode.

@@ -4,7 +4,7 @@ description: "Platform freelancer dan project owner untuk capstone Bangkit."
 date: 2026-06-16T09:00:00+07:00
 weight: 1
 cover:
-  image: "images/projects/gethub.svg"
+  image: "images/projects/gethub.png"
   alt: "Cover Gethub"
 tags:
   - "bangkit"
@@ -24,7 +24,7 @@ Gethub adalah proyek capstone Bangkit Academy Mobile Development Cohort yang dip
 - Analisis sentimen berbasis AI untuk ulasan
 - Escrow payment flow
 - Chat antar pengguna
-- Digital portfolio
+- Digital projects
 - Business card scanning
 
 ## Kenapa Penting
