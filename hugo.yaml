@@ -11,6 +11,7 @@ params:
   description: "Full-Stack Developer, IT Software Engineer, dan founder SatuInovasi.com."
   keywords:
     - "Muhammad Danish Rabbani"
+    - "Programmer di Medan"
     - "Full-Stack Developer"
     - "IT Software Engineer"
     - "Web Development"
@@ -26,7 +27,8 @@ params:
   mainSections:
     - "post"
   ShowReadingTime: false
-  ShowShareButtons: false
+  ShowShareButtons: true
+  ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
   ShowPostNavLinks: true
   ShowRssButtonInSectionTermList: true
@@ -70,6 +72,10 @@ languages:
             url: "/post/"
           - name: "Portofolio"
             url: "/portfolio/"
+          - name: "Arsip"
+            url: "/archives/"
+          - name: "Tag"
+            url: "/tags/"
           - name: "Kontak"
             url: "/contact/"
     menu:
@@ -83,9 +89,15 @@ languages:
         - name: "Portofolio"
           pageRef: "/portfolio"
           weight: 30
+        - name: "Arsip"
+          pageRef: "/archives"
+          weight: 40
+        - name: "Tag"
+          pageRef: "/tags"
+          weight: 50
         - name: "Kontak"
           pageRef: "/contact"
-          weight: 40
+          weight: 60
   en:
     languageName: "English"
     languageCode: "en-US"
@@ -99,29 +111,39 @@ languages:
         imageHeight: 220
         title: "Muhammad Danish Rabbani"
         subtitle: "Full-Stack Developer, IT Software Engineer, and founder of SatuInovasi.com. I focus on desktop, web, mobile, DevOps, cloud, and business automation."
-        buttons:
-          - name: "About"
-            url: "/en/about/"
-          - name: "Blog"
-            url: "/en/post/"
-          - name: "Portfolio"
-            url: "/en/portfolio/"
-          - name: "Contact"
-            url: "/en/contact/"
+      buttons:
+        - name: "About"
+          url: "/en/about/"
+        - name: "Posts"
+          url: "/en/post/"
+        - name: "Portfolio"
+          url: "/en/portfolio/"
+        - name: "Archives"
+          url: "/en/archives/"
+        - name: "Tags"
+          url: "/en/tags/"
+        - name: "Contact"
+          url: "/en/contact/"
     menu:
       main:
         - name: "About"
           pageRef: "/about"
           weight: 10
-        - name: "Blog"
+        - name: "Posts"
           pageRef: "/post"
           weight: 20
         - name: "Portfolio"
           pageRef: "/portfolio"
           weight: 30
+        - name: "Archives"
+          pageRef: "/archives"
+          weight: 40
+        - name: "Tags"
+          pageRef: "/tags"
+          weight: 50
         - name: "Contact"
           pageRef: "/contact"
-          weight: 40
+          weight: 60
 
 markup:
   goldmark:

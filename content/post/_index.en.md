@@ -1,5 +1,5 @@
 ---
-title: "Blog"
+title: "Posts"
 description: "Technical notes, work reflections, and lessons from the projects I build."
 hideMeta: true
 ---
