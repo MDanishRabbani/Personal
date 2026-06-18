@@ -12,63 +12,108 @@
   </footer>
 </article>
 
-{{- $posts := sort (where site.RegularPages "Type" "post") "Date" "desc" -}}
-{{- $posts = where $posts "Params.hiddenInHomeList" "!=" "true" -}}
-{{- if gt (len $posts) 0 }}
-<section>
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
+{{- $paginator := .Paginate $pages }}
+
+{{- $projects := where site.RegularPages "Type" "portfolio" }}
+{{- $projects = where $projects "Params.hiddenInHomeList" "!=" "true" }}
+{{- $projects = sort $projects "Weight" "asc" }}
+
+<header class="posts-header">
   <h2>{{ i18n "latest_posts" }}</h2>
-  {{- range first 2 $posts }}
-  <article class="post-entry">
-    {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-    {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">{{ .Title }}</h2>
-    </header>
-    {{- if (ne (.Param "hideSummary") true) }}
-    <div class="entry-content">
-      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-    </div>
-    {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <footer class="entry-footer">
-      {{- partial "post_meta.html" . -}}
-    </footer>
-    {{- end }}
-    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-  </article>
+</header>
+
+{{- range $index, $page := $paginator.Pages }}
+
+<article class="post-entry">
+  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+  {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+      {{- .Title }}
+    </h2>
+  </header>
+  {{- if (ne (.Param "hideSummary") true) }}
+  <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+  </div>
   {{- end }}
+  {{- if not (.Param "hideMeta") }}
+  <footer class="entry-footer">
+    {{- partial "post_meta.html" . -}}
+  </footer>
+  {{- end }}
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+
+{{- if and (eq $paginator.PageNumber 1) (eq $index 1) (gt (len $projects) 0) }}
+<section class="projects-section">
+  <header class="projects-header">
+    <h2>{{ i18n "latest_projects" }}</h2>
+  </header>
+  <div class="projects-carousel">
+    <div class="projects-track">
+      {{- range first 3 $projects }}
+      {{- $project := . }}
+      <article class="project-card">
+        {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+        {{- if not $isHidden }}
+        {{- with $project.Params.cover.image }}
+        <div class="project-cover">
+          <img src="{{ . | absURL }}" alt="{{ $project.Params.cover.alt | default $project.Title }}" loading="lazy">
+        </div>
+        {{- end }}
+        {{- end }}
+        <div class="project-content">
+          <header class="project-header">
+            <h3>{{ .Title }}</h3>
+          </header>
+          {{- if (ne (.Param "hideSummary") true) }}
+          <div class="project-summary">
+            <p>{{ .Summary | plainify | htmlUnescape | truncate 120 }}{{ if .Truncated }}...{{ end }}</p>
+          </div>
+          {{- end }}
+          {{- if not (.Param "hideMeta") }}
+          <footer class="project-footer">
+            {{- partial "post_meta.html" . -}}
+          </footer>
+          {{- end }}
+        </div>
+        <a class="project-link" aria-label="project link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+      </article>
+      {{- end }}
+    </div>
+  </div>
+  <div class="projects-see-more">
+    <a href="{{ relLangURL `portfolio/` }}" class="see-more-btn">{{ i18n "view_more_projects" }}</a>
+  </div>
 </section>
 {{- end }}
 
-{{- $projects := sort (where site.RegularPages "Type" "portfolio") "Weight" "asc" -}}
-{{- $projects = where $projects "Params.hiddenInHomeList" "!=" "true" -}}
-{{- if gt (len $projects) 0 }}
-<section>
-  <h2>{{ i18n "latest_projects" }}</h2>
-  {{- range first 3 $projects }}
-  <article class="post-entry">
-    {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-    {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">{{ .Title }}</h2>
-    </header>
-    {{- if (ne (.Param "hideSummary") true) }}
-    <div class="entry-content">
-      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-    </div>
+{{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+      &laquo;&nbsp;{{ i18n "prev_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}
+      {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
+      {{- end }}
+    </a>
     {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <footer class="entry-footer">
-      {{- partial "post_meta.html" . -}}
-    </footer>
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+      {{- i18n "next_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}
+      {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
+      {{- end }}&nbsp;&raquo;
+    </a>
     {{- end }}
-    <a class="entry-link" aria-label="project link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-  </article>
-  {{- end }}
-  <div class="buttons">
-    <a class="button" href="{{ relLangURL `portfolio/` }}">{{ i18n "view_more_projects" }}</a>
-  </div>
-</section>
+  </nav>
+</footer>
 {{- end }}
 
 {{- end }}

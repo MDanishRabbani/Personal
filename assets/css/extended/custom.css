@@ -1,0 +1,14 @@
+/* PaperMod extended styles for the homepage and content images. */
+
+.entry-cover img {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+iframe {
+  border-radius: var(--radius) !important;
+}
+
+.home-info .entry-content {
+  max-width: 70rem;
+}

@@ -3,7 +3,6 @@ title: "SatuInovasi.com"
 description: "Layanan web, automasi, dan strategi digital untuk bisnis."
 date: 2026-06-14T09:00:00+07:00
 weight: 2
-hideMeta: true
 cover:
   image: "images/projects/satuinovasi.svg"
   alt: "Cover SatuInovasi.com"

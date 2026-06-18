@@ -1,8 +1,6 @@
 ---
-title: "Hello, I'm Muhammad Danish Rabbani"
-description: "Full-Stack Developer focused on backend, LLM integration, web, mobile, DevOps, cloud, and business automation."
+title: "Hi, I'm Muhammad Danish Rabbani"
+description: "Software Engineer passionate about backend and LLM integration, with work across web, mobile, DevOps, cloud, and business automation."
 ---
 
-I am a Full-Stack Developer who is passionate about backend work, LLM integration, web, mobile, DevOps, cloud, and business automation. Check my projects on [GitHub](https://github.com/MDanishRabbani) or in the [Projects](/en/portfolio/) section. Enjoy the visit!
-
-If you want to see the business side of my work, visit [SatuInovasi.com](https://satuinovasi.com/).
+Software Engineer passionate about Backend and LLM Integration, see my projects on GitHub or in the **<u>[Projects](/en/portfolio/)</u>** section. Enjoy! <br>Always keep business ideas and services at <u>**[SatuInovasi.com](https://satuinovasi.com)**</u>

@@ -1,9 +1,9 @@
-baseURL: "http://localhost:1313/"
-title: "Home"
+baseURL: "https://danishrabbani.my.id/"
+title: "Muhammad Danish Rabbani"
 defaultContentLanguage: "id"
 defaultContentLanguageInSubdir: false
 pagination:
-  pagerSize: 8
+  pagerSize: 5
 enableRobotsTXT: true
 
 params:
@@ -122,3 +122,8 @@ languages:
         - name: "Contact"
           pageRef: "/contact"
           weight: 40
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

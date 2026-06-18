@@ -3,7 +3,6 @@ title: "KupiTilizer"
 description: "Laravel web project with a sprint 2 demo."
 date: 2026-06-11T09:00:00+07:00
 weight: 3
-hideMeta: true
 cover:
   image: "images/projects/kupitilizer.svg"
   alt: "KupiTilizer cover"
