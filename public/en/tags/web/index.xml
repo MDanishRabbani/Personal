@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Web on Danish Web</title>
+    <link>http://localhost:1313/en/tags/web/</link>
+    <description>Recent content in Web on Danish Web</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 15 Jun 2026 09:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SatuInovasi.com</title>
+      <link>http://localhost:1313/en/projects/satuinovasi/</link>
+      <pubDate>Sun, 14 Jun 2026 09:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/projects/satuinovasi/</guid>
+      <description>Web, automation, and digital strategy services for businesses.</description>
+    </item>
+    <item>
+      <title>KupiTilizer</title>
+      <link>http://localhost:1313/en/projects/kupitilizer/</link>
+      <pubDate>Thu, 11 Jun 2026 09:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/projects/kupitilizer/</guid>
+      <description>Laravel web project with a sprint 2 demo.</description>
+    </item>
+    <item>
+      <title>The Stack I Use for Web, Mobile, and DevOps</title>
+      <link>http://localhost:1313/en/post/stack-untuk-web-mobile-dan-devops/</link>
+      <pubDate>Mon, 15 Jun 2026 09:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/post/stack-untuk-web-mobile-dan-devops/</guid>
+      <description>A summary of the technologies I use to build clean and maintainable products.</description>
+    </item>
+    <item>
+      <title>Teaching Linux and Web Programming: From Material to Practice</title>
+      <link>http://localhost:1313/en/post/mengajar-linux-dan-web-programming/</link>
+      <pubDate>Sat, 13 Jun 2026 09:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/post/mengajar-linux-dan-web-programming/</guid>
+      <description>Notes from teaching 54 students across 16 sessions.</description>
+    </item>
+    <item>
+      <title>Building SatuInovasi.com for Real Business Needs</title>
+      <link>http://localhost:1313/en/post/membangun-satuinovasi-com-untuk-bisnis/</link>
+      <pubDate>Wed, 10 Jun 2026 09:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/post/membangun-satuinovasi-com-untuk-bisnis/</guid>
+      <description>Reflections on web services, automation, and digital support for businesses.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="KupiTilizer cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="48" fill="url(#bg)"/>
+  <circle cx="980" cy="140" r="180" fill="#ffffff" opacity=".08"/>
+  <circle cx="1030" cy="500" r="250" fill="#ffffff" opacity=".06"/>
+  <text x="80" y="150" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="34" letter-spacing="4">WEB APP</text>
+  <text x="80" y="300" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700">KupiTilizer</text>
+  <text x="80" y="386" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="36">Laravel team project</text>
+  <text x="80" y="540" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700" opacity=".92">KT</text>
+</svg>

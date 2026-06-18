@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Stack on Danish Web</title>
+    <link>http://localhost:1313/en/tags/stack/</link>
+    <description>Recent content in Stack on Danish Web</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 15 Jun 2026 09:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/stack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Stack I Use for Web, Mobile, and DevOps</title>
+      <link>http://localhost:1313/en/post/stack-untuk-web-mobile-dan-devops/</link>
+      <pubDate>Mon, 15 Jun 2026 09:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/post/stack-untuk-web-mobile-dan-devops/</guid>
+      <description>A summary of the technologies I use to build clean and maintainable products.</description>
+    </item>
+  </channel>
+</rss>
