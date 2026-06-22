@@ -78,5 +78,12 @@
       <guid>http://localhost:1313/about/</guid>
       <description>Profil, fokus kerja, pengalaman, dan teknologi yang saya pakai.</description>
     </item>
+    <item>
+      <title>Tentang Saya</title>
+      <link>http://localhost:1313/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about-me/</guid>
+      <description>Ringkasan profil dari LinkedIn: bio, pengalaman, pendidikan, sertifikasi, skill, organisasi, relawan, penghargaan, dan bahasa.</description>
+    </item>
   </channel>
 </rss>
