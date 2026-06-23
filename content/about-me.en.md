@@ -5,10 +5,6 @@ hideMeta: true
 ---
 
 <div class="about-me">
-<section class="about-hero">
-<div class="about-kicker">LinkedIn-style profile</div>
-<h2>Full-Stack Developer and IT Software Engineer</h2>
-<p>I build desktop, web, and mobile apps that stay clean, maintainable, and useful for business operations. My focus is work that connects business needs, user experience, and stable technical execution.</p>
 
 <div class="about-badges">
 <span class="about-badge">Full-Stack Developer</span>
